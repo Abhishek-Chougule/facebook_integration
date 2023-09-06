@@ -145,20 +145,20 @@ frappe.ui.form.on('Facebook Settings', {
 													fetch_fields.$input.addClass("btn btn-primary btn-xs");
 													fetch_fields.refresh();
 
-													dialog.fields_dict.form.input.onchange = function () {
-														field_mapping = {}
-														for (var q in dialog.fields_dict) {
-															if (!["page", "fetch_forms", "form", "fetch_fields"].includes(q)) {
-																var temp_field = dialog.get_field(q);
-																temp_field.df.hidden = true;
-																temp_field.refresh();
-																delete dialog.fields_dict[q]
-																dialog.get_primary_btn().hide()
-															}
-														}
-														form_name = null;
-														current_form = null;
-													}
+													// dialog.fields_dict.form.input.onchange = function () {
+													// 	field_mapping = {}
+													// 	for (var q in dialog.fields_dict) {
+													// 		if (!["page", "fetch_forms", "form", "fetch_fields"].includes(q)) {
+													// 			var temp_field = dialog.get_field(q);
+													// 			temp_field.df.hidden = true;
+													// 			temp_field.refresh();
+													// 			delete dialog.fields_dict[q]
+													// 			dialog.get_primary_btn().hide()
+													// 		}
+													// 	}
+													// 	form_name = null;
+													// 	current_form = null;
+													// }
 													dialog.fields_dict.fetch_fields.input.onclick = function () {
 														form_name = dialog.get_field("form").value
 														for (var n = 0, len = forms_list.length; n < len; n++) {
