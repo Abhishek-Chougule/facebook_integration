@@ -16,8 +16,7 @@
    "fieldname": "form_id",
    "fieldtype": "Data",
    "label": "Form Id",
-   "read_only": 1,
-   "unique": 1
+   "read_only": 1
   },
   {
    "fieldname": "page_id",
